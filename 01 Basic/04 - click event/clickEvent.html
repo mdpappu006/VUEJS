@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Properties</title>
+    <title>Click Events & Methods</title>
 </head>
 <body>
     
@@ -14,8 +14,16 @@
          <h2>  Author Name: {{ author }} </h2>
          <h2>  Total session : {{ classes }} </h2>
 
-    </div>
+        <button v-on:click="classes++"> Increase Class </button>
+        <button v-on:click="classes--" style="margin-left: 15px"> Decrease Class</button>
 
+        <h2>Change the Course</h2>
+
+        <!-- <a href="#" @click="course='Laravel'"> Laravel</a> -->
+        <a href="#" @click="changeTitle()"> Laravel</a>
+        
+    </div>
+    
     <script src="https://unpkg.com/vue@next"></script>
     <script src="main.js"></script>
 </body>
