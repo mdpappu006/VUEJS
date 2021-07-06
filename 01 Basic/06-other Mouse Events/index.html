@@ -23,11 +23,10 @@
             <div class="col-md-12 mt-5">
                 <div id="app">
                     <h2>Mouse Events</h2>
-
-                    <div class="box"></div>
-                    <div class="box2"></div>
-                    <div class="box3"></div>
-                    <div class="box4"></div>
+                    <div class="box" @mouseover="handleEvent">  Mouseover (enter)</div>
+                    <div class="box" v-on:mouseleave="handleEvent">Mouseleave</div>
+                    <div class="box" v-on:dblclick="handleEvent">Double Click</div>
+                    <div class="box" @mousemove="mouseMove"> X : {{ x }} & Y : {{ y }} </div>
                 </div>
             </div>
         </div>
