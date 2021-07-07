@@ -25,7 +25,9 @@ const app = Vue.createApp({
                     duration: '15 months',
                     instructor: 'Nazmul Hossain'
                 }
-            ]
+            ],
+
+            google: "https://google.com",
         }
     },
 })
