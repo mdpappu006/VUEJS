@@ -1,3 +1,9 @@
 1. Template refs
 
 2. Multiple Components
+
+3. Components Styles & global Styles
+
+4. Emitting Custom Events
+
+5. Click Event Modifiers

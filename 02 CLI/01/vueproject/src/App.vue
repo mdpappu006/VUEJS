@@ -1,13 +1,15 @@
 <template>
   <h1>This is my first Hello world</h1>
   <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <Modal />
+  <Modal defaultText="props is registered"/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 
 import Modal from './components/Modal.vue'
+
+import './assets/global.css'
 
 export default {
   name: 'App',

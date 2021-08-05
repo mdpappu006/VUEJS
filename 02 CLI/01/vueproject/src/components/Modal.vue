@@ -1,10 +1,18 @@
 <template>
     <div class="backdrop">
         <div class="modal">
-            <p>Modal content</p>
+            <h1>{{defaultText}}</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur expedita deleniti, at laboriosam doloremque rerum, asperiores, vero facilis distinctio amet saepe fuga nemo? Vel quae amet natus officiis ipsam dolore.</p>
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    props: ['defaultText']
+}
+</script>
+
 
 <style scoped>
     .modal{
@@ -23,5 +31,8 @@
         height: 100%;
     }
 
+    h1{
+        color: rgb(27, 109, 109);
+    }
 
 </style>
