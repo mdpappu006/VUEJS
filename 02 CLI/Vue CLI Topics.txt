@@ -4,6 +4,8 @@
 
 3. Components Styles & global Styles
 
-4. Emitting Custom Events
+4. Passing data with props
 
-5. Click Event Modifiers
+5. Emitting Custom Events
+
+6. Click Event Modifiers

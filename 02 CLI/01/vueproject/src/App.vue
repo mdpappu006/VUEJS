@@ -1,18 +1,23 @@
 <template>
   <h1>This is my first Hello world</h1>
   <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <Modal defaultText="props is registered"/>
+  <Modal :defaultText="props" theme="sale"/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
 import Modal from './components/Modal.vue'
 
 import './assets/global.css'
 
 export default {
+  data(){
+    return{
+      props: "props is registered."
+    }
+  },
   name: 'App',
+  props: ['theme'],
   components: {
     HelloWorld, Modal
   }
