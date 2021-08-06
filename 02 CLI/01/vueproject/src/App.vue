@@ -3,7 +3,7 @@
   <HelloWorld msg="Welcome to Your Vue.js App"/>
 
   <div v-if="showModal">
-    <Modal :defaultText="props" theme="sale"/>
+    <Modal :defaultText="props" theme="sale" @close="toggleModal"/>
   </div>  
 
   <!-- Modal Open -->
