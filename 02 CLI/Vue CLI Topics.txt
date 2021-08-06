@@ -5,7 +5,9 @@
 3. Components Styles & global Styles
 
 4. Passing data with props
-	
-5. Emitting Custom Events
 
-6. Click Event Modifiers
+5. Custom Modal Creation with Vue
+	
+6. Emitting Custom Events
+
+7. Click Event Modifiers

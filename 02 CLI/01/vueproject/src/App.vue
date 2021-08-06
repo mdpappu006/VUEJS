@@ -1,7 +1,14 @@
 <template>
   <h1>This is my first Hello world</h1>
   <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <Modal :defaultText="props" theme="sale"/>
+
+  <div v-if="showModal">
+    <Modal :defaultText="props" theme="sale"/>
+  </div>  
+
+  <!-- Modal Open -->
+  <h2>Modal</h2>
+  <button @click="toggleModal">Open</button>
 </template>
 
 <script>
@@ -13,13 +20,19 @@ import './assets/global.css'
 export default {
   data(){
     return{
-      props: "props is registered."
+      props: "props is registered.",
+      showModal: false
     }
   },
   name: 'App',
   props: ['theme'],
   components: {
     HelloWorld, Modal
+  },
+  methods:{
+    toggleModal(){
+      this.showModal = !this.showModal
+    }
   }
 }
 </script>
