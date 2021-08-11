@@ -5,6 +5,9 @@
     <Modal theme="sale" @close="toggleModal">
         <h1> Learning VUEJS Course </h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aperiam recusandae veniam doloremque.</p>
+        <template v-slot:links>
+          <a href="https://google.com"> Current URL</a>
+        </template>
     </Modal>
   </div>  
 
