@@ -1,7 +1,7 @@
 <template>
   <h1>This is my first Hello world</h1>
 
-  <div v-if="showModal">
+  <teleport to=".telModal" v-if="showModal">
     <Modal theme="sale" @close="toggleModal">
         <h1> Learning VUEJS Course </h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aperiam recusandae veniam doloremque.</p>
@@ -9,7 +9,7 @@
           <a href="https://google.com"> Current URL</a>
         </template>
     </Modal>
-  </div>  
+  </teleport>  
 
   <!-- Modal Open -->
   <h2>Modal</h2>
